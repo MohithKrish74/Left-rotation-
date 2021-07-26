@@ -1,0 +1,41 @@
+package com.company;
+
+import com.sun.jdi.Value;
+import org.w3c.dom.ls.LSOutput;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size=in.nextInt();
+        ArrayList<Integer>list=new ArrayList<Integer>();
+        System.out.println("Enter the elements ");
+        for(int i=0;i<size;i++)
+        {
+            list.add(in.nextInt());
+        }
+        System.out.println("User list is "+list);
+        System.out.println("The elements after left rotations is: ");
+        System.out.print(list.get(size-2)+" "+list.get(size-1)+" ");
+        for(int i=0;i<size-2;i++)
+        {
+            System.out.print(list.get(i)+" ");
+        }
+        
+
+    }
+
+
+}
+
+
+
+
+
+
+
